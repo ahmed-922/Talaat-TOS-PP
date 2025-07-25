@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Talaat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .last-updated {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .dropdown-section {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .dropdown-header {
+            background: #f8f9fa;
+            padding: 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s ease;
+        }
+        
+        .dropdown-header:hover {
+            background: #e9ecef;
+        }
+        
+        .dropdown-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .dropdown-content {
+            padding: 20px;
+            display: none;
+        }
+        
+        .dropdown-content.expanded {
+            display: block;
+        }
+        
+        .section-text {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .subheading {
+            color: #FFB84D;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .bullet-section {
+            margin: 12px 0;
+        }
+        
+        .bullet-item {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .bullet-item:before {
+            content: "•";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .disclaimer-text {
+            color: #FFB84D;
+            background: rgba(255, 184, 77, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #FFB84D;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        
+        .contact-text {
+            color: #FF4057;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .chevron {
+            transition: transform 0.2s ease;
+            width: 20px;
+            height: 20px;
+            stroke: #666;
+        }
+        
+        .chevron.rotated {
+            transform: rotate(180deg);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Last Updated: January 2025</div>
+        </div>
+        
+        <div class="content">
+            <!-- Introduction & Scope Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('introduction')">
+                    <div class="dropdown-title">Introduction & Scope</div>
+                    <svg class="chevron" id="chevron-introduction" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content expanded" id="content-introduction">
+                    <div class="section-text">
+                        Welcome to Talaat's Privacy Policy. This document explains how we collect, use, and protect your personal information when you use our tourism and cultural discovery platform.
+                    </div>
+                    <div class="section-text">
+                        This policy applies to all users of the Talaat mobile application and related services, including tourists, residents, and business partners in the Kingdom of Bahrain and beyond.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Collection Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('dataCollection')">
+                    <div class="dropdown-title">Data Collection</div>
+                    <svg class="chevron" id="chevron-dataCollection" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-dataCollection">
+                    <div class="section-text">
+                        We collect various types of information to provide you with personalized tourism experiences and cultural recommendations.
+                    </div>
+                    <div class="subheading">Personal Information</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Account registration details including name, email, and profile information</div>
+                        <div class="bullet-item">Authentication credentials and security preferences</div>
+                        <div class="bullet-item">Age verification for appropriate content and legal compliance</div>
+                        <div class="bullet-item">Cultural and tourism preferences to enhance recommendations</div>
+                    </div>
+                    <div class="subheading">Location Data</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Real-time location for nearby attractions and services</div>
+                        <div class="bullet-item">Location history to improve personalized recommendations</div>
+                        <div class="bullet-item">Travel patterns and frequently visited areas</div>
+                        <div class="bullet-item">Saved locations and favorite destinations</div>
+                        <div class="bullet-item">Check-in data at partner venues and cultural sites</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Services Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('locationServices')">
+                    <div class="dropdown-title">Location Services</div>
+                    <svg class="chevron" id="chevron-locationServices" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-locationServices">
+                    <div class="disclaimer-text">
+                        Location services are essential for providing relevant tourism recommendations and cultural experiences in Bahrain.
+                    </div>
+                    <div class="section-text">
+                        We use your location data to enhance your cultural discovery experience through:
+                    </div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Nearby attractions, restaurants, and cultural sites recommendations</div>
+                        <div class="bullet-item">Cultural events and festivals happening in your vicinity</div>
+                        <div class="bullet-item">Location-based discounts and voucher opportunities</div>
+                        <div class="bullet-item">Analytics to understand tourism patterns and improve services</div>
+                        <div class="bullet-item">Emergency services and safety features when needed</div>
+                    </div>
+                    <div class="section-text">
+                        You can control location sharing through your device settings and our app preferences at any time.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('usage')">
+                    <div class="dropdown-title">How We Use Your Data</div>
+                    <svg class="chevron" id="chevron-usage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-usage">
+                    <div class="section-text">
+                        Your data helps us provide exceptional tourism and cultural experiences tailored to your interests and location.
+                    </div>
+                    <div class="subheading">Service Provision</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Provide personalized tourism recommendations based on your preferences</div>
+                        <div class="bullet-item">Facilitate voucher redemption and exclusive discounts at partner venues</div>
+                        <div class="bullet-item">Enable reviews and ratings functionality for cultural sites and services</div>
+                        <div class="bullet-item">Process interactions with partner businesses for bookings and reservations</div>
+                    </div>
+                    <div class="subheading">Communication & Support</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Send service updates and important notifications about your trips</div>
+                        <div class="bullet-item">Provide customer support and assistance during your cultural journey</div>
+                        <div class="bullet-item">Respond to inquiries and feedback about our services</div>
+                    </div>
+                    <div class="subheading">Improvement & Analytics</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Analyze usage patterns to improve our tourism recommendations</div>
+                        <div class="bullet-item">Develop new features and partnerships with cultural institutions</div>
+                        <div class="bullet-item">Ensure platform security and prevent fraudulent activities</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sharing Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('sharing')">
+                    <div class="dropdown-title">Data Sharing</div>
+                    <svg class="chevron" id="chevron-sharing" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-sharing">
+                    <div class="section-text">
+                        We share your information only when necessary to provide our services and enhance your cultural experiences.
+                    </div>
+                    <div class="subheading">Partner Businesses</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Restaurants and venues for reservation and service purposes</div>
+                        <div class="bullet-item">Voucher redemption data with participating merchants and cultural sites</div>
+                        <div class="bullet-item">Anonymous analytics to help partners improve their tourism services</div>
+                    </div>
+                    <div class="subheading">Service Providers</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Cloud hosting and data storage providers with strict security standards</div>
+                        <div class="bullet-item">Analytics and performance monitoring services for app optimization</div>
+                        <div class="bullet-item">Payment processing partners with industry-leading security measures</div>
+                        <div class="bullet-item">Customer support and communication tools for better service delivery</div>
+                    </div>
+                    <div class="disclaimer-text">
+                        We never sell your personal data to third parties and ensure all partners meet our strict privacy and security standards.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commercial Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('commercial')">
+                    <div class="dropdown-title">Commercial Use</div>
+                    <svg class="chevron" id="chevron-commercial" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-commercial">
+                    <div class="section-text">
+                        We handle commercial transactions and promotional activities with transparency and respect for your preferences.
+                    </div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Voucher usage data is shared only with relevant partner businesses</div>
+                        <div class="bullet-item">Transaction information is encrypted and securely stored</div>
+                        <div class="bullet-item">Commercial preferences help us provide relevant offers and cultural experiences</div>
+                        <div class="bullet-item">You can opt out of promotional communications at any time</div>
+                        <div class="bullet-item">Financial data follows strict compliance and retention standards</div>
+                    </div>
+                    <div class="section-text">
+                        Partner businesses may contact you directly regarding services you've purchased or inquired about, always respecting your communication preferences.
+                    </div>
+                </div>
+            </div>
+
+            <!-- International Transfers Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('transfers')">
+                    <div class="dropdown-title">International Data Transfers</div>
+                    <svg class="chevron" id="chevron-transfers" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-transfers">
+                    <div class="section-text">
+                        As a platform serving international tourists and local residents, we may transfer data across borders while maintaining strict protection standards.
+                    </div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Primary data storage remains within Bahrain when possible</div>
+                        <div class="bullet-item">International transfers occur only with adequate safeguards and legal protections</div>
+                        <div class="bullet-item">EU visitors receive GDPR-level protection regardless of data location</div>
+                        <div class="bullet-item">Service providers must meet international security standards</div>
+                    </div>
+                    <div class="disclaimer-text">
+                        All international data transfers comply with applicable laws and include appropriate contractual protections.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Retention Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('retention')">
+                    <div class="dropdown-title">Data Retention</div>
+                    <svg class="chevron" id="chevron-retention" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-retention">
+                    <div class="section-text">
+                        We retain your data only as long as necessary to provide services and comply with legal requirements.
+                    </div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Account data: While account is active plus 2 years after deletion</div>
+                        <div class="bullet-item">Location data: Aggregated after 6 months, deleted after 2 years</div>
+                        <div class="bullet-item">Commercial data: Up to 7 years for financial compliance requirements</div>
+                        <div class="bullet-item">User-generated content: Until you request deletion</div>
+                        <div class="bullet-item">Analytics data: Anonymized and aggregated after 1 year</div>
+                        <div class="bullet-item">Support communications: 3 years for quality assurance</div>
+                    </div>
+                    <div class="section-text">
+                        You can request earlier deletion of your data, subject to legal and safety requirements.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Your Rights Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('rights')">
+                    <div class="dropdown-title">Your Privacy Rights</div>
+                    <svg class="chevron" id="chevron-rights" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-rights">
+                    <div class="section-text">
+                        You have comprehensive rights regarding your personal data and how we process it.
+                    </div>
+                    <div class="subheading">Access & Control</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Access your personal data and understand how it's used</div>
+                        <div class="bullet-item">Correct inaccurate or incomplete information</div>
+                        <div class="bullet-item">Download your data in a portable format</div>
+                        <div class="bullet-item">Delete your account and associated data</div>
+                    </div>
+                    <div class="subheading">Processing Rights</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Object to processing for marketing purposes</div>
+                        <div class="bullet-item">Restrict processing in certain circumstances</div>
+                        <div class="bullet-item">Withdraw consent where processing is based on consent</div>
+                        <div class="bullet-item">Lodge complaints with data protection authorities</div>
+                    </div>
+                    <div class="disclaimer-text">
+                        To exercise your rights, contact us through the methods provided in this policy. We'll respond within the legally required timeframes.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cookies Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('cookies')">
+                    <div class="dropdown-title">Cookies & Tracking</div>
+                    <svg class="chevron" id="chevron-cookies" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-cookies">
+                    <div class="section-text">
+                        We use cookies and similar technologies to enhance your app experience and provide personalized services.
+                    </div>
+                    <div class="subheading">Essential Cookies</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Authentication and account security</div>
+                        <div class="bullet-item">App functionality and user preferences</div>
+                        <div class="bullet-item">Security and fraud prevention</div>
+                    </div>
+                    <div class="subheading">Analytics Cookies</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Usage analytics to improve our tourism services</div>
+                        <div class="bullet-item">Performance monitoring and optimization</div>
+                        <div class="bullet-item">Error tracking and debugging</div>
+                    </div>
+                    <div class="section-text">
+                        You can control cookie preferences through your device settings and our app privacy controls.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('security')">
+                    <div class="dropdown-title">Data Security</div>
+                    <svg class="chevron" id="chevron-security" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-security">
+                    <div class="section-text">
+                        We implement comprehensive security measures to protect your personal information and maintain your trust.
+                    </div>
+                    <div class="subheading">Technical Safeguards</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">End-to-end encryption for sensitive data transmission</div>
+                        <div class="bullet-item">Secure data centers with industry certifications</div>
+                        <div class="bullet-item">Regular security audits and penetration testing</div>
+                        <div class="bullet-item">Multi-factor authentication options for enhanced security</div>
+                    </div>
+                    <div class="subheading">Organizational Safeguards</div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Strict employee access controls and training</div>
+                        <div class="bullet-item">Data breach response procedures</div>
+                        <div class="bullet-item">Regular security awareness programs</div>
+                        <div class="bullet-item">Vendor security requirements and audits</div>
+                    </div>
+                    <div class="disclaimer-text">
+                        While we implement strong security measures, no system is 100% secure. We encourage users to also take precautions with their account credentials.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Children's Privacy Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('children')">
+                    <div class="dropdown-title">Children's Privacy</div>
+                    <svg class="chevron" id="chevron-children" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-children">
+                    <div class="section-text">
+                        We are committed to protecting children's privacy and comply with applicable laws regarding minors' data.
+                    </div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Users must be at least 16 years old to create an account</div>
+                        <div class="bullet-item">Users under 18 require parental consent for certain features</div>
+                        <div class="bullet-item">Enhanced privacy protections for minors</div>
+                        <div class="bullet-item">Limited data collection from users under 18</div>
+                        <div class="bullet-item">No targeted advertising to minors</div>
+                        <div class="bullet-item">Parental controls and oversight options for family accounts</div>
+                    </div>
+                    <div class="section-text">
+                        Parents can contact us to review, modify, or delete their child's information and to refuse further collection of their child's data.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Policy Changes Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('changes')">
+                    <div class="dropdown-title">Policy Changes</div>
+                    <svg class="chevron" id="chevron-changes" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-changes">
+                    <div class="section-text">
+                        We may update this privacy policy to reflect changes in our practices or applicable laws.
+                    </div>
+                    <div class="bullet-section">
+                        <div class="bullet-item">Material changes will be communicated through the app</div>
+                        <div class="bullet-item">30 days notice will be provided for significant changes</div>
+                        <div class="bullet-item">Continued use after changes indicates acceptance</div>
+                        <div class="bullet-item">You may delete your account if you disagree with changes</div>
+                    </div>
+                    <div class="section-text">
+                        We recommend reviewing this policy periodically to stay informed about how we protect your privacy.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" onclick="toggleSection('contact')">
+                    <div class="dropdown-title">Contact Information</div>
+                    <svg class="chevron" id="chevron-contact" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="dropdown-content" id="content-contact">
+                    <div class="section-text">
+                        For questions, concerns, or requests regarding this privacy policy or your personal data, please contact us:
+                    </div>
+                    <div class="contact-text">Privacy Email: privacy@talaat.app</div>
+                    <div class="contact-text">Support Email: support@talaat.app</div>
+                    <div class="contact-text">Data Protection Officer: dpo@talaat.app</div>
+                    <div class="section-text">
+                        For complaints or concerns about our privacy practices, you may also contact the relevant data protection authority in Bahrain or your jurisdiction.
+                    </div>
+                    <div class="section-text">
+                        Talaat operates in compliance with Kingdom of Bahrain privacy laws and international standards, respecting both legal requirements and cultural values.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`content-${sectionId}`);
+            const chevron = document.getElementById(`chevron-${sectionId}`);
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                chevron.classList.remove('rotated');
+            } else {
+                content.classList.add('expanded');
+                chevron.classList.add('rotated');
+            }
+        }
+
+        // Initialize with introduction section expanded
+        document.addEventListener('DOMContentLoaded', function() {
+            const introChevron = document.getElementById('chevron-introduction');
+            if (introChevron) {
+                introChevron.classList.add('rotated');
+            }
+        });
+    </script>
+</body>
+</html>

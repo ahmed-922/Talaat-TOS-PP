@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+        .section-header:hover {
+            background-color: #e9ecef;
+        }
+        
+        .section-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .section-content {
+            padding: 20px;
+            display: none;
+        }
+        
+        .section.active .section-content {
+            display: block;
+        }
+        
+        .section.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .chevron {
+            transition: transform 0.3s;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .disclaimer {
+            background-color: #fff9e6;
+            border-left: 4px solid #FFB84D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            color: #856404;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            color: #FF4057;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section-title {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last Updated: January 2025</p>
+        
+        <div class="section active">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Agreement to Terms</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>By accessing and using this service, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this service.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Service Description</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>Our service provides a comprehensive platform that includes:</p>
+                <ul>
+                    <li>Location-based discovery of restaurants, cafes, and food establishments</li>
+                    <li>Access to menus, prices, and business information</li>
+                    <li>User reviews and ratings</li>
+                    <li>Special offers and discount vouchers</li>
+                    <li>Reservation and ordering capabilities</li>
+                    <li>Personalized recommendations based on preferences</li>
+                </ul>
+                <div class="disclaimer">
+                    The service is provided "as is" without any warranties, express or implied. We do not guarantee the accuracy or completeness of any information provided through the service.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">User Accounts & Authentication</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>To access certain features of our service, you may be required to create an account. You agree to:</p>
+                <ul>
+                    <li>Provide accurate, current, and complete information</li>
+                    <li>Maintain the security of your password and account</li>
+                    <li>Accept responsibility for all activities under your account</li>
+                    <li>Notify us immediately of any unauthorized use</li>
+                    <li>Not share your account credentials with others</li>
+                </ul>
+                <p>You must be at least 13 years old to create an account and use this service.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Location Services & Data</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>Our service utilizes location data to provide relevant results. By using our service:</p>
+                <ul>
+                    <li>You consent to the collection and use of your location data</li>
+                    <li>Location data is used to show nearby establishments</li>
+                    <li>Your location history may be stored to improve recommendations</li>
+                    <li>You can disable location services at any time in your device settings</li>
+                </ul>
+                <p>We respect your privacy and handle location data in accordance with our Privacy Policy.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Vouchers, Discounts & Commercial Terms</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>Special offers and vouchers available through our service are subject to:</p>
+                <ul>
+                    <li>Specific terms and conditions set by each merchant</li>
+                    <li>Expiration dates and usage limitations</li>
+                    <li>Availability and may be withdrawn without notice</li>
+                    <li>One-time use unless otherwise specified</li>
+                    <li>Non-transferable and have no cash value</li>
+                </ul>
+                <p>We are not responsible for honoring vouchers or resolving disputes between users and merchants.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Content & Information Accuracy</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>While we strive to provide accurate information:</p>
+                <ul>
+                    <li>Menu items, prices, and availability may change without notice</li>
+                    <li>Business hours and locations are subject to change</li>
+                    <li>User-generated content may not reflect current conditions</li>
+                    <li>We do not guarantee the accuracy of nutritional information</li>
+                </ul>
+                <div class="disclaimer">
+                    Always verify critical information directly with the establishment before making decisions based on our service.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Prohibited Uses</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>You agree not to use our service to:</p>
+                <ul>
+                    <li>Violate any laws or regulations</li>
+                    <li>Post false, misleading, or fraudulent content</li>
+                    <li>Harass, abuse, or harm other users</li>
+                    <li>Spam or send unsolicited communications</li>
+                    <li>Attempt to gain unauthorized access to our systems</li>
+                    <li>Scrape or harvest data without permission</li>
+                    <li>Interfere with the proper functioning of the service</li>
+                    <li>Impersonate others or misrepresent your affiliation</li>
+                </ul>
+                <p>Violation of these terms may result in immediate termination of your account.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Intellectual Property</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>All content and materials available through our service are protected by intellectual property rights:</p>
+                <ul>
+                    <li>Our logos, designs, and content are our exclusive property</li>
+                    <li>User-generated content remains the property of the users</li>
+                    <li>You grant us a license to use content you submit</li>
+                    <li>Third-party trademarks remain property of their respective owners</li>
+                </ul>
+                <p>You may not use our intellectual property without express written permission.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Limitation of Liability</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="disclaimer">
+                    TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.
+                </div>
+                <p>We are not liable for:</p>
+                <ul>
+                    <li>Errors or inaccuracies in content</li>
+                    <li>Personal injury or property damage resulting from your use</li>
+                    <li>Unauthorized access to your data</li>
+                    <li>Interruption or cessation of service</li>
+                    <li>Bugs, viruses, or other harmful components</li>
+                    <li>Any loss or damage of any kind incurred as a result of using our service</li>
+                </ul>
+                <p>Some jurisdictions do not allow exclusion of certain warranties or limitations of liability, so some of the above may not apply to you.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Privacy & Data Protection</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>Your use of our service is also governed by our Privacy Policy. Please review our Privacy Policy, which also governs the site and informs users of our data collection practices.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Account Termination</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>We reserve the right to terminate or suspend your account:</p>
+                <ul>
+                    <li>For violations of these Terms of Service</li>
+                    <li>For prolonged periods of inactivity</li>
+                    <li>For fraudulent or illegal activities</li>
+                    <li>At our sole discretion with or without notice</li>
+                </ul>
+                <p>Upon termination, your right to use the service will immediately cease.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Governing Law & Dispute Resolution</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>These Terms shall be governed and construed in accordance with the laws of the Kingdom of Bahrain:</p>
+                <ul>
+                    <li>Any disputes shall be resolved through binding arbitration</li>
+                    <li>Arbitration shall be conducted in Bahrain</li>
+                    <li>The prevailing party may recover reasonable attorney fees</li>
+                </ul>
+                <p>You waive any objection to jurisdiction and venue in such courts.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Changes to Terms</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting. Your continued use of the service following any changes indicates acceptance of the new terms.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Contact Information</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-content">
+                <p>If you have any questions about these Terms of Service, please contact us at:</p>
+                <p class="contact-info">Email: legal@ourservice.com</p>
+                <p class="contact-info">Support: support@ourservice.com</p>
+                <p>We aim to respond to all inquiries within 48 business hours.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleSection(header) {
+            const section = header.parentElement;
+            section.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
